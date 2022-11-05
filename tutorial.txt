@@ -1,0 +1,10 @@
+1: instalar o react- native global  e o CLI: npm install -g create-react-native-app, 
+npm install -g react-native-cli
+
+2: instalar a aplicação react-native:   create-react-native-app <Nome da Aplicação>
+
+3: instalar o Genymotion com o virtualbox pra emular o android, ou baixar o app 'Expo Go' no celular e parear com o codigo da aplicação
+
+4: iniciar com: npm start ou expo start: Logo o que for alterado no código ja vai manifestar no android
+
+5: 
