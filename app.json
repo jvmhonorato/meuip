@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "meuip",
+    "slug": "meuip",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "meuip"
+}
