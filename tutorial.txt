@@ -7,4 +7,5 @@ npm install -g react-native-cli
 
 4: iniciar com: npm start ou expo start: Logo o que for alterado no código ja vai manifestar no android
 
-5: 
+5: Em App.js criar TAG com <Text>, <View> e <Button> em seguida aplicar styles aos componetes.
+
