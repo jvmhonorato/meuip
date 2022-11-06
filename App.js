@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Button, Image, StyleSheet, Text, View } from 'react-native';
-// import logo from './assets/ip2.png'
+ import logo from './assets/logo1.png'
 
 export default function App() {
   const [data, setData] = useState('')
@@ -14,12 +14,12 @@ export default function App() {
     <View style={styles.container}>
       <View style={styles.header}>
          <Text style={styles.made} >Olá dev, você está no React Native!</Text>
-         {/* <Image source={logo}/> */}
+         
         </View>
       
       <View style={styles.body}>
         
-     
+      <Image style={styles.img} source={logo}/>
         <Text style={styles.ip}>{data}</Text>
         <Button title="Decobrir meu IP!" onPress={findMyIp}/>
       </View>
@@ -51,6 +51,10 @@ const styles = StyleSheet.create({
  header:{
   paddingTop:30,
   paddingBottom:10
+ },
+ img: {
+   alignItems: 'center',
+  justifyContent: 'center'
  },
  footer: {
   paddingTop:10,
