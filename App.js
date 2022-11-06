@@ -1,9 +1,15 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Image, StyleSheet, Text, View } from 'react-native';
 // import logo from './assets/ip2.png'
 
 export default function App() {
+  const [data, setData] = useState('')
+  const findMyIp = async() => {
+    const ip = await fetch('http://httpbin.org/ip')
+    const data = await ip.json()
+   setData(data.origin)
+  }
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -14,11 +20,11 @@ export default function App() {
       <View style={styles.body}>
         
      
-        <Text style={styles.ip}>IP</Text>
-        <Button title="Decobrir meu IP!"/>
+        <Text style={styles.ip}>{data}</Text>
+        <Button title="Decobrir meu IP!" onPress={findMyIp}/>
       </View>
       <View style={styles.footer}>
-       <Text style={styles.made}>Feio com ❤ por Honorato!</Text>
+       <Text style={styles.made}>Feito com ❤ por Honorato!</Text>
       </View>
      
     </View>

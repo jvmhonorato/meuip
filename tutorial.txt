@@ -9,3 +9,8 @@ npm install -g react-native-cli
 
 5: Em App.js criar TAG com <Text>, <View> e <Button> em seguida aplicar styles aos componetes.
 
+LOGICA
+
+6: No <Button > passar o evento onPress={findMyIp} chamando na função, em seguida escrever a função findMyIp()  dentro do componente App
+
+7:usar a função async  com o o await no retorno do fetch e na fusão com json(), em seguida dar um setData(data.origin)
