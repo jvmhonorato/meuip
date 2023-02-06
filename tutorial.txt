@@ -15,3 +15,7 @@ LOGICA
 6: No <Button > passar o evento onPress={findMyIp} chamando na função, em seguida escrever a função findMyIp()  dentro do componente App
 
 7:usar a função async  com o o await no retorno do fetch e na fusão com json(), em seguida dar um setData(data.origin), dessa forma ele irá renderizar o IP
+
+START: expo start
+
+UDGRADE: expo update <currency version>.0.0 
